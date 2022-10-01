@@ -1,5 +1,8 @@
 package com.pandey.mateico;
 
+import static android.util.TypedValue.COMPLEX_UNIT_DIP;
+import static android.util.TypedValue.applyDimension;
+
 import android.content.Context;
 import android.graphics.Typeface;
 
@@ -16,10 +19,10 @@ public class MaterialIconUtils {
         return materialFont;
     }
 
-   /* static int convertDpToPx(Context context, float dp) {
+    static int convertDpToPx(Context context, float dp) {
         return (int) applyDimension(COMPLEX_UNIT_DIP, dp,
                 context.getResources().getDisplayMetrics());
-    }*/
+    }
 
     public static String getIconString(int iconIndex){
         return new String(Character.toChars(0xF001 + iconIndex));
